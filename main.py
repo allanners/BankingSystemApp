@@ -46,7 +46,7 @@ class CreateAccount:
         # Create a new account
         account_id = len(self.account_repository.accounts) + 1  # generates ID based on the number of existing accounts
         account_number = f"ACCT-{account_id:05d}" # generates an account number in the format "ACCT-00001"
-        new_account = Account(account_id, customer.customer_id, account_number) # create new account
+        new_account = Account(account_id, customer.customer_id, account_number)
 
         # Save account to repository
         self.account_repository.save_account(new_account)
@@ -113,9 +113,9 @@ def main():
     # Create a new account
     new_account = create_account_use_case.create_account(
         customer_id=1, 
-        name="John Doe", 
-        email="john.doe@example.com", 
-        phone_number="123-456-7890"
+        name="Juan Dela Cruz", 
+        email="juandelacruz@example.com", 
+        phone_number="09561543429"
     )
     print(f"Created Account: {new_account.account_number} with initial balance: {new_account.get_balance()}")
 

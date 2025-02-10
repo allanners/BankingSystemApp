@@ -46,4 +46,4 @@ Ensure you have **Python 3.7+** installed on your system.
    ```
 
 ## License
-This project is licensed under the MIT License.
+This project is licensed under the **MIT** License.
